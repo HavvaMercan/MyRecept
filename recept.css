@@ -1,0 +1,48 @@
+
+body{
+     background-color:blanchedalmond;
+}
+#header {
+    background-color:burlywood;
+   color:black;
+      width:1800px;
+     margin:0;
+    text-align:center;
+  
+    padding:10px;
+}
+#nav {
+    
+      font-size:25px;
+    line-height:100px;
+    background-color:burlywood;
+    height:700px;
+    width:150px;
+    float:left;
+    padding:50px;
+    
+    text-decoration-style: dotted;
+}
+
+#section {
+
+    
+    font-size:20px;
+   color:firebrick;
+    height:150px;
+    float:inherit;
+     padding:50px; 
+    text-align:center;
+   
+     
+    
+}
+#footer {
+    background-color:burlywood;
+    color:white;
+    clear:both;
+    height:50px;
+    text-align:right;
+    font-size:20px;
+    
+}
