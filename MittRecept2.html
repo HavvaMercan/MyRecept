@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Mitt Favorit Recept</title>
         <meta name="description" content="KannelBullar.">
-     <script src="jquery.js"></script>
-        <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+     <link rel="stylesheet" type="text/css" src="rating.css" />
 
         <link rel="stylesheet" href="recept2.css">
+       
+        
     </head>
    
     <body>
@@ -22,50 +22,44 @@
               </div>
               
         
+        <span class="star-rating">  <input type="radio" 
+name="rating" value="1"><i></i>  <input type="radio"
+name="rating" value="2"><i></i>  <input type="radio" 
+name="rating" value="3"><i></i>  <input type="radio" 
+name="rating" value="4"><i></i>  <input type="radio" 
+name="rating" value="5"><i></i></span>
+<strong class="choice a rating"></strong>
               
               <div id="nav">
            
              </div>
-        
-         
-    <div id="betyg">
+              
 
-    <i class="fa fa-star"></i>
-
-    <i class="fa fa-star"></i>
-
-    <i class="fa fa-star"></i>
-
-    <i class="fa fa-star"></i>
-
-    <i class="fa fa-star"></i>
-
-</div>
         
         
         
-                    
+        
       <div id="section"> 
           
   <ul> 
       
- <h2>Ingredienser</h2>
+      <h2>Ingredienser</h2>
         
    
-
+                               
                            
-							<li><span>12</span> paket jäs<</li>
-							<li><span >50</span> g smör eller margarin</li>
-							<li><span >3</span> dl mjölk</li>
-							<li><span>1/2</span> dl socker</li>
-                            <li><span >8</span> dl vetemjöl</li>
+                            <br><li><span id=1>12</span> paket jäst</li>
+							<li><span id=2>50</span> g smör eller margarin</li>
+							<li><span id=3 >3</span> dl mjölk</li>
+							<li><span id=4>0.5</span> dl socker</li>
+                            <li><span id=5>8</span> dl vetemjöl</li>
      
                     
                                <h3>Fylling</h3>
                  
-                        <li><span >50</span> g smör</li>
-                        <li><span>2</span> tsk malen kanel</li>
-                        <li><span>1/2</span>dl socker</li>
+                        <li><span id=6>50</span> g smör</li>
+                        <li><span id=7>2</span> tsk malen kanel</li>
+                        <li><span id=8>0.5</span>dl socker</li>
                         
                                                 
 
@@ -74,24 +68,33 @@
                     <h3>Pensling</h3>
                    
                        <li>ägg</li> 
-                       <li>pärlsocker<li>
+      <li>pärlsocker</li>
       
       
                          </ul>
-          
-          <button class ="min" type="button" onclick="minusClick();" >-</button><span id = "ingMin" ></span>
+        
+        
+          <div class=button>
+           <button class="Testbutton" class ="min" type="button" onclick="minusClick();" >-</button><span id = "ingMin" ></span>
     
-          <button class ="plus" type="button" onclick="plusClick();" >+</button> portion för <span id = "ing" > 1 </span>
+          <button class="Testbutton2" class ="plus" type="button" onclick="plusClick();" >+</button>Portioner för <span id = "ing" > 20st </span>
+          </div>
+          
+          
+          
+          
+          
+ 
+              
 
- <ol>
-				
+				   
 				
 					<h4 style="font-size:22">Gör så här:</h4>
          
-						
-							<li><text style="font-size:28px">Deg</text>Smula jästen i en bunke. Smält matfettet i en kastrull eller i en skål i mikrovågsugnen på full effekt (max 800 W) ca 30 sek. Tillsätt mjölken och värm till fingervarmt, 37°C. Häll lite av degvätskan över jästen och rör tills den löst sig.Tillsätt resten av degvätskan, socker, salt och nästan allt vetemjölet, spara lite till utbakningen. Arbeta degen smidig för hand eller i maskin tills degen släpper bunkens kanter. Låt degen jäsa övertäckt ca 30 min.<br></li>
-							<li onclick="check(this)">Fyllning: Rör matfettet smidigt med socker och kanel till fyllningen.Ta upp degen på arbetsbänk och knåda den smidig med resterande mjöl. Kavla ut degen till en platta, ca 30x40 cm (för 20 st). Bred på fyllningen och rulla ihop från långsidan. Skär rullen i ca 2 cm breda bitar. Lägg bitarna med snittytan uppåt på en bakpappersklädd plåt eller i bullformar av papper.Låt bullarna jäsa under bakduk ca 20 min.</li>
-							<li onclick="check(this)">Pensling: Pensla bullarna med uppvispat ägg och strö över lite pärlsocker. Grädda bullarna mitt i ugnen i 250°C, ca 8 min. Låt kallna på galler under bakduk innan de packas i påse eller burk med lock.</li>
+						<ol>
+							<li><text style="font-size:22px"><b>Deg:</b></text>Smula jästen i en bunke. Smält matfettet i en kastrull eller i en skål i mikrovågsugnen på full effekt (max 800 W) ca 30 sek. Tillsätt mjölken och värm till fingervarmt, 37°C. Häll lite av degvätskan över jästen och rör tills den löst sig.Tillsätt resten av degvätskan, socker, salt och nästan allt vetemjölet, spara lite till utbakningen. Arbeta degen smidig för hand eller i maskin tills degen släpper bunkens kanter. Låt degen jäsa övertäckt ca 30 min.<br></li>
+							<li><text style="font-size:22px"><b>Fyllning:</b></text> Rör matfettet smidigt med socker och kanel till fyllningen.Ta upp degen på arbetsbänk och knåda den smidig med resterande mjöl. Kavla ut degen till en platta, ca 30x40 cm (för 20 st). Bred på fyllningen och rulla ihop från långsidan. Skär rullen i ca 2 cm breda bitar. Lägg bitarna med snittytan uppåt på en bakpappersklädd plåt eller i bullformar av papper.Låt bullarna jäsa under bakduk ca 20 min.</li>
+							<li><text style="font-size:22px"><b>Pensling:</b></text> Pensla bullarna med uppvispat ägg och strö över lite pärlsocker. Grädda bullarna mitt i ugnen i 250°C, ca 8 min. Låt kallna på galler under bakduk innan de packas i påse eller burk med lock.</li>
 				
 							<li>Ät!</li>
 						</ol>
@@ -101,6 +104,12 @@
     <div id="footer">
          <a href="MittRecept.html">Föregående sidan</a> 
         </div>
+        <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+        <script type="text/JavaScript">
+            $(':radio').change(  function(){    $('.choice').text( this.value + ' stars' );  } )
+        </script>
         
         
     </body>
