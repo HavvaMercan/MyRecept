@@ -20,55 +20,44 @@ function plusClick() {
    
     if(personer<=8){
     personer =personer+1;
-   forsta = forsta + 12; 
+    forsta = forsta + 12; 
     andra = andra + 50; 
     tredje = tredje+ 3;
-   fjarde = fjarde+ 0.5;
+    fjarde = fjarde+ 0.5;
     femte = femte + 8;
-      sjatte =sjatte+50;
-        sjunde=sjunde+2;
-        attoende=attoende+0.5;
+    sjatte =sjatte+50;
+    sjunde=sjunde+2;
+    attoende=attoende+0.5;
 		
   
       
         
-    // För att hämta en HTML-tagg i vår HTML-fil...
-   // var p = document.getElementById("personer");
     var f = document.getElementById("1");
     var a = document.getElementById("2");
     var t = document.getElementById("3");
     var fj= document.getElementById("4");
     var fe = document.getElementById("5");
- var s = document.getElementById("6");  
-        var sj= document.getElementById("7"); 
-        var at=document.getElementById("8"); 
+    var s = document.getElementById("6");  
+    var sj= document.getElementById("7"); 
+    var at=document.getElementById("8"); 
 		
    
 
     
     
-    // ...och ändra på innehållet mellan start- och slut-tagg:
-   //p.innerHTML = personer;
     f.innerHTML = forsta;
     a.innerHTML = andra;
     t.innerHTML = tredje;
     fj.innerHTML = fjarde;
     fe.innerHTML = femte;
-		s.innerHTML = sjatte;
-        sj.innerHTML = sjunde;
-       at.innerHTML = attoende;
+    s.innerHTML = sjatte;
+    sj.innerHTML = sjunde;
+    at.innerHTML = attoende;
 		
 	
     }
 
 }
-
-
-    
-
-
-
-
 
 function minusClick()
 
@@ -89,11 +78,7 @@ function minusClick()
          
 		
  
-		 
 
-         
-    
-        //var p = document.getElementById("personer");
         var f = document.getElementById("1");
         var a = document.getElementById("2");
         var t = document.getElementById("3");
@@ -106,16 +91,14 @@ function minusClick()
 		 
 
 
-
-//p.innerHTML = personer;
     f.innerHTML = forsta;
     a.innerHTML = andra;
     t.innerHTML = tredje;
-   fj.innerHTML =fjarde;
-   fe.innerHTML = femte;
-   s.innerHTML = sjatte;
+    fj.innerHTML =fjarde;
+    fe.innerHTML = femte;
+    s.innerHTML = sjatte;
     sj.innerHTML = sjunde;
-         at.innerHTML  = attoende;
+     at.innerHTML  = attoende;
 
 		 
 		 
